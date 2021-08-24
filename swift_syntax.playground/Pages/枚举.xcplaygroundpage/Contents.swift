@@ -10,6 +10,11 @@ enum Direction {
 }
 
 // 关联值 可以自己传值
+// 有时将枚举的成员值跟其他类型的值关联存储在一起,非常有用
+// 1个字节存储成员值
+// N个字节存储关联值(N取占用内存最大的关联值)
+// 任何一个case的关联值都共用这N个字节
+// 共用体
 enum Score {
     case points(Int)
     case grade(Character)
@@ -27,7 +32,7 @@ var date = Date.digit(y: 2021, m: 8, d: 20)
 date = .string("2021-8-23")
 
 
-// 原始值 固定的 后面不可以改
+// 原始值 固定的 后面不可以改, 不占用枚举内存
 enum PS : Character {
     case s = "s"
     case h = "h"
@@ -107,5 +112,30 @@ MemoryLayout<Direction>.alignment // 1 对齐参数
 MemoryLayout<DirectionX>.size // 1 实际使用到的空间大小
 MemoryLayout<DirectionX>.stride // 1 分配占用的空间大小
 MemoryLayout<DirectionX>.alignment // 1 对齐参数
+
+
+/* 特殊情况
+enum Example {
+    case number
+}
+
+var e = Example.number
+
+MemoryLayout<Example>.size // 0 实际使用到的空间大小
+MemoryLayout<Example>.stride // 1 分配占用的空间大小
+MemoryLayout<Example>.alignment // 1 对齐参数
+
+
+enum Example {
+    case number(Int)
+}
+
+var e = Example.number(5)
+
+MemoryLayout<Example>.size // 8 实际使用到的空间大小
+MemoryLayout<Example>.stride // 8 分配占用的空间大小
+MemoryLayout<Example>.alignment // 8 对齐参数
+
+*/
 
 //: [Next](@next)
