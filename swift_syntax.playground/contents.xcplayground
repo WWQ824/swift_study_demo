@@ -3,5 +3,8 @@
     <pages>
         <page name='syntax_注释'/>
         <page name='syntax_1'/>
+        <page name='函数重载'/>
+        <page name='枚举'/>
+        <page name='可选项'/>
     </pages>
 </playground>
