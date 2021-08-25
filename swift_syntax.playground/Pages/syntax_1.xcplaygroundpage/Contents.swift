@@ -3,15 +3,17 @@ import PlaygroundSupport
 
 /*: 常见数据类型
  1. 值类型:枚举,结构体
-      赋值给var, let或者传参,值直接将所有内容拷贝一份 属于深拷贝
+      赋值给var, let或者传参,直接将所有内容拷贝一份 属于深拷贝
+ 仅当有"写"操作 才会真正拷贝
+ 建议 不修改是 使用let修饰
   
  2. 引用类型:类
- 
+ 赋值给var, let或者传参, 是将内存地址拷贝一份 属于浅拷贝
  ![](dataType.png "Local image")
  
  */
 
-// 常量,变量在初始化之前都不能使用
+// 常量,变量在初始 化之前都不能使用
 
 //let ageX: Int
 //var height: Double
