@@ -9,5 +9,7 @@
         <page name='lldb常用指令'/>
         <page name='结构体'/>
         <page name='类'/>
+        <page name='闭包'/>
+        <page name='属性'/>
     </pages>
 </playground>

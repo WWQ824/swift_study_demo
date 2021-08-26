@@ -57,6 +57,12 @@ struct Point3 {
     var b: Bool = true
 }
 
+let p31 = Point3()
+// let修饰的结构体 不允许修改
+// p31.x = 5
+// p31.y = 5
+// p31.b = false
+
 MemoryLayout<Point3>.size    // 17
 MemoryLayout<Point3>.stride  // 24
 MemoryLayout<Point3>.alignment // 8
