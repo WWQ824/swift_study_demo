@@ -12,5 +12,6 @@
         <page name='闭包'/>
         <page name='属性'/>
         <page name='初始化器'/>
+        <page name='协议'/>
     </pages>
 </playground>
