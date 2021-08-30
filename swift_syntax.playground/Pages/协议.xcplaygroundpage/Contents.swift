@@ -116,6 +116,12 @@ class Stu {}
 var x: AnyClass = Person.self
 x = Stu.self
 
+// 本质编译器遇到type(of:)直接取出地址指向内存前8个字节
 type(of: any)
+
+
+// Self 
+
+
 
 //: [Next](@next)

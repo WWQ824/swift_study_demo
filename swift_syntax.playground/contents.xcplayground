@@ -13,5 +13,7 @@
         <page name='属性'/>
         <page name='初始化器'/>
         <page name='协议'/>
+        <page name='错误处理'/>
+        <page name='泛型'/>
     </pages>
 </playground>
