@@ -15,5 +15,8 @@
         <page name='协议'/>
         <page name='错误处理'/>
         <page name='泛型'/>
+        <page name='String'/>
+        <page name='扩展'/>
+        <page name='访问控制'/>
     </pages>
 </playground>
