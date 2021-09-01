@@ -18,5 +18,6 @@
         <page name='String'/>
         <page name='扩展'/>
         <page name='访问控制'/>
+        <page name='内存管理'/>
     </pages>
 </playground>
